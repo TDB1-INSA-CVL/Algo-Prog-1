@@ -5,7 +5,8 @@
 
 int main() {
     // Question 1 :
-    float tableau[MAX_SIZE], size;
+    float tableau[MAX_SIZE];
+    int size = 0;
 
     do {
         AFFICHER("Nombre de notes ? ");
