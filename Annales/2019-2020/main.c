@@ -51,11 +51,11 @@ int main() {
 
     AFFICHER("\nTableau 1 : ");
     for (int i = 0; i < n_x; ++i) {
-        AFFICHER(x[n_x], " ");
+        AFFICHER(x[i], " ");
     }
     AFFICHER("\nTableau 2 : ");
     for (int i = 0; i < n_y; ++i) {
-        AFFICHER(y[n_y], " ");
+        AFFICHER(y[i], " ");
     }
 
     AFFICHER("\nMoyenne du tableau x : ", moyenne(x, n_x));
