@@ -3,7 +3,7 @@
 #include "insaio.h"
 
 int main() {
-    char ch1[50], ch2[50], ch3[50];
+    char ch1[50], ch2[50], ch3[50] = "";
 
     AFFICHER("Entrez une chaine de caractères : ");
     SAISIR(ch1);
