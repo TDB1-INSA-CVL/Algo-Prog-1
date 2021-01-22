@@ -19,16 +19,19 @@ int caractere_present(char ch[], char c) {
 }
 
 int sequence_presente(char ch[], char seq[]) {
-    int j = 0, longeur_sequence = longueur_chaine(seq);
+    int j = 0;
+    int longeur_sequence = longueur_chaine(seq);
     for (int i = 0; i < longueur_chaine(ch); ++i) {
+        if (ch[i] != seq[j]) {
+            j = 0;
+        }
+
         if (ch[i] == seq[j]) {
             if (j == longeur_sequence - 1) { // Toute la chaine a été trouvé
                 return 1;
-            } else { // Sinon on augmente j de 1 pour verifier si le caractère suivant dans ch correspond au cara suivant de la sequence
+            } else { // Sinon on augmente j de 1 pour verifier si le caractère suivant dans ch correspond au caractere suivant de la sequence
                 j++;
             }
-        } else {
-            j = 0;
         }
     }
     return 0;
