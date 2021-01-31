@@ -47,7 +47,7 @@ int question2() {
 }
 
 int maxi2 (int a, int b);
-float maxf3 (float a, float b, float c);
+void maxf3 (float a, float b, float c);
 int isPresentFloatIn (float tableau[], float a);
 int saisirInts (int tableau[], int len);
 void saisirStr (char str[], int len);
